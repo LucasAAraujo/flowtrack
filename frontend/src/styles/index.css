@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg:           #FFFFFF;
+    --color-surface:      #F8FAFC;
+    --color-border:       #E2E8F0;
+    --color-text:         #0F172A;
+    --color-text-muted:   #64748B;
+    --color-primary:      #6366F1;
+    --color-primary-hover:#4F46E5;
+    --color-success:      #10B981;
+    --color-warning:      #F59E0B;
+    --color-danger:       #EF4444;
+  }
+
+  .dark {
+    --color-bg:           #0F172A;
+    --color-surface:      #1E293B;
+    --color-border:       #334155;
+    --color-text:         #F1F5F9;
+    --color-text-muted:   #94A3B8;
+    --color-primary:      #818CF8;
+    --color-primary-hover:#6366F1;
+    --color-success:      #34D399;
+    --color-warning:      #FBBF24;
+    --color-danger:       #F87171;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-bg text-text-base font-sans;
+  }
+}
